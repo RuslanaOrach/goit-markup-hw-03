@@ -1,0 +1,227 @@
+/* 
+
+цвет основного текста: #212121
+вторичный цвет текста: #757575
+белый: #FFFFFF;
+размытый белый: rgba(255, 255, 255, 0.6);
+акцент: #2196F3
+цвет фона вторичный (светло-серый): #F5F4FA
+цвет фона вторичный (темно-серый): #2F303A
+*/
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-color: #ffffff;
+  --secondary-bg-color: #f5f5f5;
+  --white-blurred: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --secondary-background-light: #f5f4fa;
+  --secondary-background-dark: #2f303a;
+  --studio-top-color: #000000;
+  --hero-button-hover: #188ce8;
+  --hero-box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* logo */
+
+.logo {
+  color: var(--studio-top-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo .logo-item {
+  color: var(--accent-color);
+}
+
+.footer-section .logo {
+  color: var(--white-color);
+}
+
+/* nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact .link:hover,
+.contact .link:focus,
+.site-nav .current,
+.address-list .route:hover,
+.address-list .route:focus,
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--secondary-background-dark);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* section */
+
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-list .title {
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.section-list .text {
+  color: var(--secondary-text-color);
+  line-height: 1.7;
+}
+
+.section-team {
+  background-color: var(--secondary-background-light);
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.team-list .text,
+.gallery-list .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.gallery-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* footer */
+
+.footer-section {
+  background-color: var(--secondary-background-dark);
+}
+
+.address-list .route {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.address-list .link {
+  color: var(--white-blurred);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+/* button */
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  box-shadow: 0px 4px 4px var(--hero-box-shadow);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.secondary-button {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-light);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hero-button-hover);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
