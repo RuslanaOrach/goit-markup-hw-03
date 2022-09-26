@@ -67,7 +67,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: solid tomato 2px; */
 }
 
 .visually-hidden {
@@ -84,15 +83,15 @@ body {
   overflow: hidden;
 }
 
-.main-nav-underline {
-  border-bottom: 1px solid var(--border-main-nav);
-}
-
 /* main */
 
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.main-nav-underline {
+  border-bottom: 1px solid var(--border-main-nav);
 }
 
 /* logo */
@@ -108,11 +107,28 @@ body {
   text-decoration: none;
 }
 
+.logo-footer {
+  color: var(--studio-top-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
 .logo .logo-item {
   color: var(--accent-color);
 }
 
+.logo-footer .logo-item {
+  color: var(--accent-color);
+}
+
 .footer-section .logo {
+  color: var(--white-color);
+}
+
+.footer-section .logo-footer {
   color: var(--white-color);
 }
 
@@ -179,7 +195,6 @@ body {
 
 .hero-title {
   width: 696px;
-  /* padding-top: 200px; */
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -200,11 +215,6 @@ body {
   padding-bottom: 94px;
 }
 
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -216,7 +226,6 @@ body {
 }
 
 .section-list .item {
-  /* width: 270px; */
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
@@ -249,13 +258,17 @@ body {
   display: flex;
 }
 
+/* work examples */
+
 .work-examples-list .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
-.work-examples-list .item:nth-child(3n) {
+.work-examples-list .item:last-child {
   margin-right: 0;
 }
+
+/* team */
 
 .section-team {
   background-color: var(--secondary-background-light);
@@ -274,7 +287,6 @@ body {
 }
 
 .team-list .title {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -286,8 +298,9 @@ body {
   margin-right: 0;
 }
 
-.team-list .text {
-  margin-bottom: 30px;
+.discription {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .text,
@@ -319,7 +332,6 @@ body {
 }
 
 .gallery-list .item {
-  /* width: 370px; */
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -334,15 +346,15 @@ body {
   margin-bottom: 0;
 }
 
-.gallery-list .image,
-.gallery-list .text {
+.gallery-list .discription {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .gallery-list .title {
-  padding-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -359,16 +371,16 @@ body {
 
 .footer-section {
   background-color: var(--secondary-background-dark);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-section .item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-section .item:first-child {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .address-list .route {
@@ -391,25 +403,6 @@ body {
 
 /* button */
 
-.button {
-  padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  display: flex;
-  margin: auto;
-  display: block;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border: none;
-
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  box-shadow: 0px 4px 4px var(--hero-box-shadow);
-  border-radius: 4px;
-}
 .button-order {
   padding: 10px 32px;
   margin: 0 auto;
@@ -417,6 +410,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -429,11 +423,6 @@ body {
 }
 
 .secondary-button {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-background-light);
-  border-radius: 4px;
-  border: inherit;
-
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -441,6 +430,11 @@ body {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
+
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-light);
+  border-radius: 4px;
+  border: inherit;
 }
 
 .button:hover,
