@@ -349,22 +349,17 @@ body {
 .gallery-list .discription {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .gallery-list .title {
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-.gallery-list .text {
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 /* footer */
@@ -437,8 +432,8 @@ body {
   border: inherit;
 }
 
-.button:hover,
-.button:focus {
+.button-order:hover,
+.button-order:focus {
   background-color: var(--hero-button-hover);
 }
 
