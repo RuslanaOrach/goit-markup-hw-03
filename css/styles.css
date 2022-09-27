@@ -284,6 +284,7 @@ body {
   background-color: var(--white-color);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -292,10 +293,16 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.17;
 }
 .team-list .item:nth-child(4n) {
   margin-right: 0;
+}
+
+.team-list .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.17;
 }
 
 .discription {
@@ -303,19 +310,11 @@ body {
   padding-bottom: 30px;
 }
 
-.team-list .text,
-.gallery-list .text {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.9;
-}
-
 /* portfolio gallery  */
 
 .gallery-buttom-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .gallery-buttom-list .item {
@@ -329,13 +328,13 @@ body {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .gallery-list .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--border-cards);
 }
 
 .gallery-list .item:nth-child(3n) {
@@ -351,6 +350,7 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border: 1px solid var(--border-cards);
 }
 
 .gallery-list .title {
@@ -360,6 +360,12 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.gallery-list .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /* footer */
@@ -374,7 +380,7 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-section .item:first-child {
+.address-list {
   margin-top: 20px;
 }
 
@@ -423,6 +429,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
 
